@@ -8,10 +8,125 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.priyansh.bookbuy.second">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text1"
-        android:text="hello"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:id="@+id/text2"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:text="hello"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:id="@+id/text3"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:layout_marginLeft="57dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text4"
+                android:text="ramjane"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publication date"
+                android:id="@+id/text5"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:layout_marginLeft="57dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text6"
+                android:text="04/03/1998"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:id="@+id/text7"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:layout_marginLeft="57dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text8"
+                android:text="1000 Rupees"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edition"
+                android:id="@+id/text9"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:layout_marginLeft="57dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text10"
+                android:text="first"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

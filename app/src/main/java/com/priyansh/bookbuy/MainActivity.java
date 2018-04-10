@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
         spinner2 = (Spinner) findViewById(R.id.spinner2);
         List<String> list = new ArrayList<String>();
         list.add("Maths of universe");
-        list.add("physics you never get to learn");
-        list.add("hey codedot");
-        list.add("life");
-        list.add("animals");
-        list.add("herbals");
+        list.add("Physics you never get to learn");
+        list.add("Hey codedot");
+        list.add("Life");
+        list.add("Animals");
+        list.add("Herbals");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, list);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
