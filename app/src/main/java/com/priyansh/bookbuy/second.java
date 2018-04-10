@@ -15,6 +15,7 @@ public class second extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         Bundle extras = getIntent().getExtras();
         String someV = extras.getString("value1");
+
         TextView vao=(TextView)findViewById(R.id.text1);
         TextView yor=(TextView)findViewById(R.id.text4);
         TextView yor1=(TextView)findViewById(R.id.text6);
@@ -78,9 +79,11 @@ public class second extends AppCompatActivity {
 
     }
     public void nxt(View v) {
-        String yo11=((TextView)findViewById(R.id.text8)).getText().toString();;
+        String yo11=((TextView)findViewById(R.id.text8)).getText().toString();
+        String yo1i=((TextView)findViewById(R.id.text1)).getText().toString();
         Intent toy=new Intent("com.priyansh.bookbuy.buy");
         toy.putExtra("value2",yo11);
+        toy.putExtra("value3",yo1i);
         startActivity(toy);
     }
 }
