@@ -138,4 +138,11 @@
                 android:id="@+id/imag"/>
         </LinearLayout>
     </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="BUY"
+        android:textColor="#000"
+        android:textSize="20dp"/>
 </RelativeLayout>
