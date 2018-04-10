@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         addListenerOnButton();
 
     }
+    
     public void addItemsOnSpinner2() {
 
         spinner2 = (Spinner) findViewById(R.id.spinner2);

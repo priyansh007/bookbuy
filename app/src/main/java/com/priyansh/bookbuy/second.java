@@ -1,7 +1,9 @@
 package com.priyansh.bookbuy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -74,5 +76,11 @@ public class second extends AppCompatActivity {
             yor4.setImageResource(R.drawable.six);
         }
 
+    }
+    public void nxt(View v) {
+        String yo11=((TextView)findViewById(R.id.text8)).getText().toString();;
+        Intent toy=new Intent("com.priyansh.bookbuy.buy");
+        toy.putExtra("value2",yo11);
+        startActivity(toy);
     }
 }
