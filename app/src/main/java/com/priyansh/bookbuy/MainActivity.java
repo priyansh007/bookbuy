@@ -1,5 +1,6 @@
 package com.priyansh.bookbuy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -64,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
 
                                 "\nSpinner 2 : "+ String.valueOf(spinner2.getSelectedItem()),
                         Toast.LENGTH_SHORT).show();
+                String yo=String.valueOf(spinner2.getSelectedItem());
+
+                Intent toy=new Intent("com.priyansh.bookbuy.second");
+                toy.putExtra("value1",yo);
+                startActivity(toy);
             }
 
         });
