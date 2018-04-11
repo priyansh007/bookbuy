@@ -86,4 +86,6 @@ public class second extends AppCompatActivity {
         toy.putExtra("value3",yo1i);
         startActivity(toy);
     }
+
+
 }

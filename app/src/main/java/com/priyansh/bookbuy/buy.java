@@ -22,16 +22,24 @@ public class buy extends AppCompatActivity {
         vao.setText(someV);
         vao1.setText(nomeN);
     }
-    public void nxt1(View v) {
-        //String yel=((EditText)findViewById(R.id.edi1)).getText().toString();
-        String hj=((TextView)findViewById(R.id.textt2)).getText().toString();
-        String ki=((TextView)findViewById(R.id.textt4)).getText().toString();
-        //String yol2=((EditText)findViewById(R.id.textt6)).getText().toString();
-        int one = Integer.parseInt(hj);
-        //int two = Integer.parseInt(yol2);
-        //int total=one*two;
-        TextView xoxo=(TextView)findViewById(R.id.textt10);
-        xoxo.setText("Hey Mr. "+one+" you bought book "+ki+" Total bill is ");
 
+    public void nxt1(View view) {
+        if(view.getId()==R.id.yo) {
+            Intent ne = new Intent("com.priyansh.bookbuy.third");
+
+            String yel=((EditText)findViewById(R.id.edi1)).getText().toString();
+
+            String ki=((TextView)findViewById(R.id.textt4)).getText().toString();
+
+
+
+            ne.putExtra("val2",yel);
+            ne.putExtra("val3",ki);
+            startActivity(ne);
+        }
     }
+
+        /*TextView xoxo=(TextView)findViewById(R.id.textt10);
+        xoxo.setText("Hey Mr. "+one+" you bought book "+ki+" Total bill is ");*/
+
 }
